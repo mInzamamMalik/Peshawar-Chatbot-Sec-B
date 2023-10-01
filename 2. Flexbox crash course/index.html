@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .navBar {
+            /* border: 2px solid gray; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .navBar .leftSide{
+            /* border: 2px solid rgb(152, 152, 2); */
+            display: flex;
+            align-items: center;
+        }
+        .navBar .leftSide div {
+            margin: 1rem;
+        }
+        .navBar .rightSide{
+            /* border: 2px solid rgb(152, 152, 2); */
+            display: flex;
+            align-items: center;
+        }
+        .navBar .rightSide div {
+            margin: 1rem;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Flex box Crash course</h1>
+
+    <nav class="navBar">
+        <div class="leftSide">
+            <img width="150px" src="./logo.png" alt="">
+
+            <div>Solution</div>
+            <div>Resources</div>
+            <div>Pricing</div>
+        </div>
+
+        <div class="rightSide">
+            <div>Sign in</div>
+            <button>Get Started</button>
+        </div>
+    </nav>
 
 
 
-    
+
+
+
+
 </body>
+
 </html>
