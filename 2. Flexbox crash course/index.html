@@ -12,21 +12,33 @@
             display: flex;
             justify-content: space-between;
         }
-        .navBar .leftSide{
+
+        .navBar .leftSide {
             /* border: 2px solid rgb(152, 152, 2); */
             display: flex;
             align-items: center;
         }
+
         .navBar .leftSide div {
             margin: 1rem;
         }
-        .navBar .rightSide{
+
+        .navBar .rightSide {
             /* border: 2px solid rgb(152, 152, 2); */
             display: flex;
             align-items: center;
         }
+
         .navBar .rightSide div {
             margin: 1rem;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: space-around;
+        }
+        .banner video{
+            max-width: 600px;
         }
     </style>
 </head>
@@ -47,6 +59,19 @@
             <button>Get Started</button>
         </div>
     </nav>
+
+
+    <div class="banner">
+
+        <div class="banner-text">
+            <h1> Made for people</h1>
+            <h1> Built for productivity</h1>
+        </div>
+
+        <video src="./intro.mp4" muted autoplay loop> </video>
+
+    </div>
+
 
 
 
