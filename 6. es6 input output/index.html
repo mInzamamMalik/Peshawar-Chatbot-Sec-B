@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Input output - Calculator app </h1>
+
+    <form onsubmit="doSum(event)">
+        first number: <input type="number" id="firstNumber" required step="0.01">
+        <br>
+        second number: <input type="number" id="secondNumber" required step="0.01">
+        <br>
+        <button type="submit">Sum</button>
+    </form>
+
+    <h3 id="resultWindow"></h3>
+
+
+    <script>
+        function doSum(event) {
+            event.preventDefault();
+
+            console.log("function is running");
+
+            let firstNumber = document.querySelector("#firstNumber").value;
+            let secondNumber = document.querySelector("#secondNumber").value;
+
+            console.log(firstNumber)
+            console.log(secondNumber)
+
+            let result = Number(firstNumber) + Number(secondNumber);
+
+            console.log(result);
+
+            let resultMessage =
+                `the sum of ${firstNumber} and ${secondNumber} = ${result}`;
+
+            document.querySelector("#resultWindow").innerHTML = resultMessage;
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
