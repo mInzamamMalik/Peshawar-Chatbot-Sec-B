@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>es6 cloning</h1>
+
+    <script> 
+        // let myNumbers = [1, 2, 3, 4];
+        // // let myNumbersCopy = myNumbers; // copy by reference, shallow copy
+       
+        // let myNumbersCopy = [...myNumbers]; // cloning
+
+        // console.log(myNumbers); // [1, 2, 3, 4]
+        // console.log(myNumbersCopy); // [1, 2, 3, 4]
+        
+        // myNumbersCopy[0] = 999;
+        
+        // console.log(myNumbers); // [1, 2, 3, 4]
+        // console.log(myNumbersCopy); // [999, 2, 3, 4]
+
+
+        let myStudent = {
+            subject: "science",
+            name: "John",
+        }
+
+        // let myStudentCopy = myStudent; // shallow copy, copy by reference
+        let myStudentCopy = {...myStudent}; // cloning
+
+        console.log(myStudent);
+        console.log(myStudentCopy);
+        
+        myStudent.name = "Malik";
+        
+        console.log(myStudent);
+        console.log(myStudentCopy);
+
+
+
+        // let myNumber = 5;
+        // let myNumberCopy = myNumber; // copy by value, deep copy
+
+        // console.log(myNumber); // 5
+        // console.log(myNumberCopy); // 5
+        
+        // myNumberCopy = 999;
+        
+        // console.log(myNumber); // 5
+        // console.log(myNumberCopy); // 999
+
+
+
+
+
+    </script>
+</body>
+
+</html>
